@@ -1,27 +1,38 @@
-# words_to_numbers
+# Words to Numbers
 
-TODO: Write a description here
+Simple words to numbers parser
 
-## Installation
+# What's it do?
 
-TODO: Write installation instructions here
+Try it... (after installing [Crystal][https://crystal-lang.org])
 
-## Usage
+```
+git clone git@github.com:jasonm23/words_to_numbers
 
-TODO: Write usage instructions here
+cd words_to_numbers
+crystal spec -v
+```
 
-## Development
+```example
+  "none" = 0
+  "one" = 1
+  "a couple hundred" = 200
+  "couple thousand" = 2000
+  "a couple of million" = 2000000
+  "a couple" = 2
+  "a pair" = 2
+  "twenty-five" = 25
+  "minus one hundred and seventeen" = -117
+  "one hundred and fifty-six" = 156
+  "minus two thousand two" = -2002
+  "nine thousand, seven hundred, one" = 9701
+  ...
+```
 
-TODO: Write development instructions here
+# Notes
 
-## Contributing
+I wrote this as an exercise to help my 7 yr old learn some programming
+ideas.
 
-1. Fork it (<https://github.com/your-github-user/words_to_numbers/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+I didn't realise it would become a shard, so I'll get it ready to use
+in your projects soon.
