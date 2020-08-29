@@ -13,7 +13,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   words_to_numbers:
-    github: jasonm23/words_to_numbers
+    github: crystal-castles/words_to_numbers
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ They can run by `crystal spec` command.
 
 ## Contributing
 
-1. [Fork it](https://github.com/jasonm23/words_to_numbers/fork)
+1. [Fork it](https://github.com/crystal-castles/words_to_numbers/fork)
 1. Create your feature branch (`git checkout -b my-new-feature`)
 1. Add test(s) in `spec/` to cover your changes & write some code, until your test are passing.
 1. [Commit your changes](https://chris.beams.io/posts/git-commit/) (`git commit -am 'Describe your change'`)
@@ -46,7 +46,7 @@ They can run by `crystal spec` command.
 
 MIT
 
-(c) Jason Milkins - 2020
+(c) Jason Milkins - 2020 crystal-castles
 
 ## Contributors
 
