@@ -1,38 +1,53 @@
 # Words to Numbers
 
-Simple words to numbers parser
+Simple words to numbers parser (BigInt supported only).
 
-# What's it do?
+For example:
 
-Try it... (after installing [Crystal][https://crystal-lang.org])
+###### "Three hundred and twelve" = 312
 
-```
-git clone git@github.com:jasonm23/words_to_numbers
+## Installation
 
-cd words_to_numbers
-crystal spec -v
-```
+Add this to your application's `shard.yml`:
 
-```example
-  "none" = 0
-  "one" = 1
-  "a couple hundred" = 200
-  "couple thousand" = 2000
-  "a couple of million" = 2000000
-  "a couple" = 2
-  "a pair" = 2
-  "twenty-five" = 25
-  "minus one hundred and seventeen" = -117
-  "one hundred and fifty-six" = 156
-  "minus two thousand two" = -2002
-  "nine thousand, seven hundred, one" = 9701
-  ...
+```yaml
+dependencies:
+  words_to_numbers:
+    github: jasonm23/words_to_numbers
 ```
 
-# Notes
+## Usage
 
-I wrote this as an exercise to help my 7 yr old learn some programming
-ideas.
+`words_to_numbers` is an extension of `String`
 
-I didn't realise it would become a shard, so I'll get it ready to use
-in your projects soon.
+```crystal
+require "words_to_numbers"
+
+# Parse string of words to numbers
+number = "Seventeen thousand".words_to_numbers
+#=> 17000
+```
+
+## Development
+
+This library's specs are put in `spec` directory.
+They can run by `crystal spec` command.
+
+## Contributing
+
+1. [Fork it](https://github.com/jasonm23/words_to_numbers/fork)
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Add test(s) in `spec/` to cover your changes & write some code, until your test are passing.
+1. [Commit your changes](https://chris.beams.io/posts/git-commit/) (`git commit -am 'Describe your change'`)
+1. Push to the branch (`git push origin my-new-feature`)
+1. Create a new Pull Request on github
+
+## License
+
+MIT
+
+(c) Jason Milkins - 2020
+
+## Contributors
+
+- Jason Milkins
