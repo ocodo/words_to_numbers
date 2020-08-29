@@ -2,11 +2,9 @@ name: words_to_numbers
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Jason Milkins <jasonm23@gmail.com>
 
-targets:
-  words_to_numbers:
-    main: src/words_to_numbers.cr
+description: Convert a string of words to the number they describe, e.g. Twenty three = 23.
 
 crystal: 0.35.1
 
