@@ -21,14 +21,15 @@ describe "Words to numbers" do
      {"two hundred and one billion, twenty-one million, two thousand and one", 201021002001},
      {"a thousand", 1000},
      {"a billion", 1000000000},
-
+     {"nineteen-hundred-and-eighty-four", 1984},
+     {"nineteen-hundred-and-ninety-nine", 1999},
    }
     %}
 
     it "\"#{{{example[0]}}}\" = #{{{example[1]}}}" do
       str = {{example[0]}}
       num = {{example[1]}}
-      words_to_number(str).should eq num
+      str.words_to_numbers.should eq num
     end
 
   {% end %}
