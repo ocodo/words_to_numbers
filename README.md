@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/crystal-castles/words_to_numbers)
+
 # Words to Numbers
 
 Simple words to numbers parser (BigInt supported only).
